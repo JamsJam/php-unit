@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Controllers;
 
 use App\Form\FormInterface;
@@ -7,8 +8,6 @@ use App\Form\Builder\FormBuilderInterface;
 
 abstract class AbstractController implements FormBuilderInterface
 {
-
-
     public function __construct(protected ?FormBuilderInterface $formBuilder = null)
     {
         $this->formBuilder = $formBuilder ?? new FormBuilder();

@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Form;
 
 use App\Security\Csrf\CsrfTokenTrait;
@@ -52,7 +53,7 @@ class Form implements FormInterface
                 htmlspecialchars($name)
             );
         }
-            // Ajoute le champ CSRF correctement
+        // Ajoute le champ CSRF correctement
         $html .= sprintf(
             '<input type="hidden" name="_token" value="%s">',
             $this->generateCsrfToken('_token')

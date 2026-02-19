@@ -1,4 +1,5 @@
 <?php
+
 namespace App;
 
 use App\Router\Router;
@@ -11,18 +12,19 @@ class Kernel
     public function __construct(
         private Router $router,
         private string $requesturi
-    ) {}
+    ) {
+    }
 
     public function run(): void
     {
 
 
         try {
-            
+
             echo $this->router->resolve($this->requesturi);
 
 
-            } catch (RouteNotFoundException $e) {
+        } catch (RouteNotFoundException $e) {
             echo $this->router->resolve('/404');
             // echo $e->getMessage();
         }

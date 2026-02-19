@@ -1,6 +1,5 @@
 <?php
 
-
 namespace App\Security\Csrf;
 
 trait CsrfTokenTrait

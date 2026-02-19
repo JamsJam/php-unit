@@ -3,15 +3,17 @@
 namespace App;
 
 // Renderer permet de gere le rendu des vu en fonction des path
-class Renderer{
+class Renderer
+{
     public function __construct(private string $viewpath, private ?array $params)
-    {}
+    {
+    }
 
-    public function view():string|bool
+    public function view(): string|bool
     {
 
         ob_start();
-        
+
         extract($this->params);
 
         require BASE_VIEW_PATH . $this->viewpath . ".php";
@@ -26,9 +28,9 @@ class Renderer{
      * @param array|null $params
      * @return static
      */
-    public static function makeView(string $viewPath, ?array $params):static
+    public static function makeView(string $viewPath, ?array $params): static
     {
-        
+
         return new static($viewPath, $params);
     }
 

@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace App\Controllers;
 
@@ -7,7 +7,7 @@ use App\Model\User;
 
 class HomeController extends AbstractController
 {
-    public function index():Renderer
+    public function index(): Renderer
     {
 
         $view = "home/index";
@@ -18,9 +18,9 @@ class HomeController extends AbstractController
         return Renderer::makeView($view, ["user" => $users]);
 
     }
-    public function login():Renderer
+    public function login(): Renderer
     {
-        
+
         $view = "login/index";
         $form = $this
             ->add("username", "text", [])
@@ -29,15 +29,16 @@ class HomeController extends AbstractController
 
         $form->handle($_POST);
 
-        if($form->isValid()){
+        if ($form->isValid()) {
             // traitement
             $data = $form->getData();
 
         }
-        return Renderer::makeView($view,["form" => $form]);
+        return Renderer::makeView($view, ["form" => $form]);
 
     }
-    public function contact(){
+    public function contact()
+    {
         $view = "contact/index";
         // $renderer = new Renderer($view);
         // var_dump($renderer->view());

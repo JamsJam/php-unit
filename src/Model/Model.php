@@ -4,12 +4,10 @@ namespace App\Model;
 
 use App\Constant;
 
-
 abstract class Model
 {
-
     private static \PDO $pdo;
-    
+
     protected string $table;
 
 
