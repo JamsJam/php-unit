@@ -5,6 +5,18 @@
     },
     "pre-commit": {
         "enabled": true,
-        "actions": []
+        "actions": [
+            {
+                "action": "vendor/bin/php-cs-fixer fix src --rules=@PSR12"
+            }
+        ]
+    },
+    "pre-push": {
+        "enabled": true,
+        "actions": [
+            {
+                "action": "bash -c 'vendor/bin/phpstan analyse src || { echo \"Erreur détectée ! Push annulé !\"; exit 1; }'"
+            }
+        ]
     }
 }

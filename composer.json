@@ -13,6 +13,9 @@
         }
     },
     "require-dev": {
-        "captainhook/captainhook": "^5.28"
+        "captainhook/captainhook": "^5.28",
+        "phpunit/phpunit": "^12.5",
+        "friendsofphp/php-cs-fixer": "^3.94",
+        "phpstan/phpstan": "^2.1"
     }
 }
