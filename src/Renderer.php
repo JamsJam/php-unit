@@ -25,11 +25,13 @@ class Renderer
      * @param string $viewPath
      * @param array|null $params
      * @return static
+     *
      */
     public static function makeView(string $viewPath, ?array $params): static
     {
 
-        return new static($viewPath, $params);
+        return new static($viewPath, $params); // @phpstan-ignore-line
+
     }
 
     public function __toString()
