@@ -3,7 +3,7 @@
         "enabled": true,
         "actions": [
             {
-                "action": "vendor/bin/php-cs-fixer fix src --rules=@PSR12"
+                "action": "vendor/bin/php-cs-fixer fix"
             },
             {
                 "action": "git add ."
