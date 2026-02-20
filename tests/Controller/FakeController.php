@@ -1,9 +1,11 @@
 <?php
+
 namespace Tests\Controller;
 
-class FakeController 
+class FakeController
 {
-    public function index(){
+    public function index()
+    {
         return 'hello world';
     }
 }

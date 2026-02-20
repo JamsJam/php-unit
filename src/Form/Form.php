@@ -50,13 +50,13 @@ class Form implements FormInterface
             $html .= sprintf(
                 '<input type="%s" name="%s">',
                 htmlspecialchars($type),
-                htmlspecialchars($name)
+                htmlspecialchars($name),
             );
         }
         // Ajoute le champ CSRF correctement
         $html .= sprintf(
             '<input type="hidden" name="_token" value="%s">',
-            $this->generateCsrfToken('_token')
+            $this->generateCsrfToken('_token'),
         );
 
 

@@ -10,9 +10,9 @@
     font-family:Arial, Helvetica, sans-serif;
     background-color:#f4f4f4;
 ">
-    <?php 
-        include(dirname(__DIR__)."/components/header.php") ;
-        // var_dump(dirname(__DIR__)."/components/header.php");
+    <?php
+        include(dirname(__DIR__) . "/components/header.php") ;
+    // var_dump(dirname(__DIR__)."/components/header.php");
     ?>
     
     <div style="

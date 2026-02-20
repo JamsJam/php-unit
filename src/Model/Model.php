@@ -17,7 +17,7 @@ abstract class Model
             //code...
             static::$pdo = new \PDO('mysql:dbname=' . Constant::DB_NAME . ';host=' . Constant::DB_HOST, Constant::DB_USERNAME, Constant::DB_PASSWORD, [
                 \PDO::ATTR_DEFAULT_FETCH_MODE => \PDO::FETCH_OBJ,
-                \PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION
+                \PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION,
             ]);
             $this->table = strtolower(explode('\\', get_class($this))[2] . 's');
         } catch (\PDOException $e) {

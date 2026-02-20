@@ -11,9 +11,8 @@ class Kernel
 
     public function __construct(
         private Router $router,
-        private string $requesturi
-    ) {
-    }
+        private string $requesturi,
+    ) {}
     public function run(): void
     {
         try {
