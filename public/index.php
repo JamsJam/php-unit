@@ -3,7 +3,6 @@
 use App\Kernel;
 use App\Router\Router;
 
-
 // autoloader composer
 require "../vendor/autoload.php";
 

@@ -5,9 +5,7 @@ namespace App;
 // Renderer permet de gere le rendu des vu en fonction des path
 class Renderer
 {
-    public function __construct(private string $viewpath, private ?array $params)
-    {
-    }
+    public function __construct(private string $viewpath, private ?array $params) {}
 
     public function view(): string|bool
     {

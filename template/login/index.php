@@ -5,9 +5,9 @@
     <title>Connexion</title>
 </head>
 <body style="margin:0; padding:0; font-family:Arial, Helvetica, sans-serif; background-color:#f4f4f4;">
-    <?php 
+    <?php
         include(dirname(__DIR__) . "/components/header.php") ;
-        // var_dump(dirname(__DIR__)."/components/header.php");
+    // var_dump(dirname(__DIR__)."/components/header.php");
     ?>
     <div style="
         max-width:400px;
@@ -65,9 +65,9 @@
             </button>
         </form> -->
 
-        <?php 
+        <?php
             echo $form->render();
-        ?>
+    ?>
 
         <p style="margin-top:15px; text-align:center; font-size:14px;">
             <a href="/register" style="color:#007BFF; text-decoration:none;">

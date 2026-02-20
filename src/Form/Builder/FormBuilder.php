@@ -13,7 +13,7 @@ class FormBuilder implements FormBuilderInterface
     {
         $this->fields[$name] = [
             'type' => $type,
-            'options' => $options
+            'options' => $options,
         ];
 
         return $this;

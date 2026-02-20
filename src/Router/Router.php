@@ -2,7 +2,7 @@
 
 namespace App\Router;
 
-use App\Exception\RouteNotFoundException;
+// use App\Exception\RouteNotFoundException;
 
 class Router
 {
@@ -32,7 +32,7 @@ class Router
                 return call_user_func_array([$class,$method], []);
             };
         }
-        throw new RouteNotFoundException();
+        return null;
     }
 
 }
