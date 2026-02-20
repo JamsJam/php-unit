@@ -1,13 +1,9 @@
 {
-    "commit-msg": {
-        "enabled": true,
-        "actions": []
-    },
     "pre-commit": {
         "enabled": true,
         "actions": [
             {
-                "action": "vendor/bin/php-cs-fixer fix src --rules=@PSR12 --diff"
+                "action": "vendor/bin/php-cs-fixer fix src --rules=@PSR12"
             },
             {
                 "action": "git add ."

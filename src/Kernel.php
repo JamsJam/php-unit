@@ -14,18 +14,10 @@ class Kernel
         private string $requesturi
     ) {
     }
-
-
     public function run(): void
     {
-
-
-
         try {
-
             echo   $this->router->resolve($this->requesturi);
-
-
         } catch (RouteNotFoundException $e) {
             echo $this->router->resolve('/404');
             //echo $e->getMessage();
